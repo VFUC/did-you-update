@@ -4,7 +4,9 @@
 lastUpdateFilePath=~/.lastCheckedForUpdatesAt
 
 # Path of update file
-updateFile=./runUpdates.sh
+updateFile=runUpdates.sh
+scriptDirectory=$(dirname $0)
+updateFilePath="$scriptDirectory/$updateFile"
 
 ####### MAIN ########
 
@@ -32,7 +34,7 @@ then
 		echo $today > $lastUpdateFilePath
 
 		echo "Checking for updates.."
-		sh $updateFile
+		sh $updateFilePath
 		echo "All done, you're up to date!"
 	
 	else # answer was not enter
