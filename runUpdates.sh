@@ -6,7 +6,23 @@ echo "Update ipsum dolor sit amet"
 
 ## Examples
 
-# Homebrew (https://brew.sh) 
+# Arch Linux (https://www.archlinux.org/)
+# echo "Pacman"
+# pacman -Syu --noconfirm
+
+# Atom packages (https://atom.io)
+# echo "Atom packages"
+# apm upgrade --no-confirm
+
+# Debian based systems like Ubuntu, Linux Mint, Raspbian and more (https://www.debian.org/)
+# echo "APT"
+# apt update && apt upgrade -y
+
+# Cocoapods spec repo (https://cocoapods.org)
+# echo "Cocoapods spec repo"
+# pod repo update
+
+# Homebrew (https://brew.sh)
 # echo "Homebrew"
 # brew update && brew upgrade
 
@@ -14,13 +30,13 @@ echo "Update ipsum dolor sit amet"
 # echo "Brew cask"
 # brew cask upgrade
 
-# Cocoapods spec repo (https://cocoapods.org)
-# echo "Cocoapods spec repo"
-# pod repo update
-
 # Mac App Store software (https://github.com/mas-cli/mas)
 # echo "Mac App Store"
 # mas upgrade
+
+# Node Package Manager (https://npmjs.com)
+# echo "NPM"
+# npm upgrade -g
 
 # Rubygems (https://rubygems.org)
 # echo "ruby gems"
