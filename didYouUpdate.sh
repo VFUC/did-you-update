@@ -14,7 +14,7 @@ updateFilePath="$scriptDirectory/$updateFile"
 if ! [ -e ${lastUpdateFilePath} ]
 then
 	touch "${lastUpdateFilePath}"
-	echo "Created initial 'last update' file to store date of last update at path: ${lastUpdateFilePath}"
+	echo -e "Created initial 'last update' file to store date of last update at:\n  ${lastUpdateFilePath}"
 fi
 
 read lastCheckedDate < ${lastUpdateFilePath} # Get last checked date from file
