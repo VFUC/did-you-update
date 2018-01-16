@@ -6,6 +6,18 @@ echo "Update ipsum dolor sit amet"
 
 ## Examples
 
+# Arch Linux (https://www.archlinux.org/)
+# echo "Pacman"
+# pacman -Syu --noconfirm
+
+# Atom packages (https://atom.io)
+# echo "Atom packages"
+# apm upgrade --no-confirm
+
+# Debian based systems like Ubuntu, Linux Mint, Raspbian and more (https://www.debian.org/)
+# echo "APT"
+# apt update && apt upgrade -y
+
 # Cocoapods spec repo (https://cocoapods.org)
 # echo "Cocoapods spec repo"
 # pod repo update
@@ -21,6 +33,10 @@ echo "Update ipsum dolor sit amet"
 # Mac App Store software (https://github.com/mas-cli/mas)
 # echo "Mac App Store"
 # mas upgrade
+
+# Node Package Manager (https://npmjs.com)
+# echo "NPM"
+# npm upgrade -g
 
 # Rubygems (https://rubygems.org)
 # echo "ruby gems"
