@@ -9,7 +9,8 @@ Simple as that! I'm using it as a shell launch script, to make sure I'm not runn
 
 # Setup
 - Clone this repo
-- Add your update calls to the `runUpdates.sh` script (whatever you want, some examples are included)
+- Uncomment or add your update calls in `runUpdates.sh` (whatever you want, some examples are included)
+- add `sudo` if needed to the specific calls in `runUpdates.sh`
 - Make sure scripts are executable - if not `chmod u+x didYouUpdate.sh runUpdates.sh`
 - Call `didYouUpdate.sh` on every terminal launch (e.g. add to `~/.bash_profile`, dependent on your shell setup)
 
