@@ -1,7 +1,9 @@
 #!/bin/sh
 
 # Path of file to store last update check date
-lastUpdateFilePath=~/.lastCheckedForUpdatesAt
+cacheDir=~/.cache/
+lastUpdateFileName=did-you-update.last-check
+lastUpdateFilePath="${cacheDir}${lastUpdateFileName}"
 
 # Path of update file
 updateFile=runUpdates.sh
@@ -13,6 +15,7 @@ updateFilePath="$scriptDirectory/$updateFile"
 # Create file if it doesn't exist yet
 if ! [ -e ${lastUpdateFilePath} ]
 then
+	mkdir -p ${cacheDir}
 	touch "${lastUpdateFilePath}"
 	echo -e "Created initial 'last update' file to store date of last update at:\n  ${lastUpdateFilePath}"
 fi
