@@ -23,8 +23,8 @@ today=$(date "+%Y-%m-%d") # Today's date
 if [[ "${today}" > "${lastCheckedDate}" ]]; # Compare dates
 then
 	# Last update was more than a day ago
-	echo "Your last updates were more than a day ago."	
-	
+	echo "Your last updates were more than a day ago."
+
 	echo "Do you want to check for updates now? [enter]"
 
 	read answer # stores user input in 'answer' variable
@@ -36,7 +36,7 @@ then
 		echo "Checking for updates.."
 		sh $updateFilePath
 		echo "All done, you're up to date!"
-	
+
 	else # answer was not enter
 		echo "Not checking for updates now"
 	fi
