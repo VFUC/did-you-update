@@ -41,3 +41,7 @@ echo "Update ipsum dolor sit amet"
 # Rubygems (https://rubygems.org)
 # echo "ruby gems"
 # gem update
+
+# Fetch all git Repositories below folder (https://git-scm.com)
+# echo "git fetch"
+# find ~/git -name ".git" -type d -print -exec git -C {}/../ fetch --all \;
