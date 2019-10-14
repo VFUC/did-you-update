@@ -12,6 +12,12 @@ updateFilePath="$scriptDirectory/$updateFile"
 
 ####### MAIN ########
 
+## MacOS Battery check
+# battery=$(pmset -g batt)
+# if [[ $battery == *"Now drawing from 'Battery Power'"* ]]; then
+#   exit
+# fi
+
 # Create file if it doesn't exist yet
 if ! [ -e ${lastUpdateFilePath} ]
 then
