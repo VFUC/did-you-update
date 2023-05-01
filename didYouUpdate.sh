@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Path of file to store last update check date
 cacheDir=~/.cache/
@@ -7,7 +7,7 @@ lastUpdateFilePath="${cacheDir}${lastUpdateFileName}"
 
 # Path of update file
 updateFile=runUpdates.sh
-scriptDirectory=$(dirname $0)
+scriptDirectory=$(dirname "$0")
 updateFilePath="$scriptDirectory/$updateFile"
 
 ####### MAIN ########
@@ -38,12 +38,12 @@ then
 
 	read answer # stores user input in 'answer' variable
 
-	if [ -z $answer ]; then # answer was empty -> enter
+	if [ -z "$answer" ]; then # answer was empty -> enter
 		# Update the update file with today's date
-		echo $today > $lastUpdateFilePath
+		echo "$today" > $lastUpdateFilePath
 
 		echo "Checking for updates.."
-		sh $updateFilePath
+		bash "$updateFilePath"
 		echo "All done, you're up to date!"
 
 	else # answer was not enter
