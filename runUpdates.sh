@@ -42,6 +42,10 @@ echo "Update ipsum dolor sit amet"
 # echo "ruby gems"
 # gem update
 
+# Rustup (https://www.rust-lang.org)
+# echo "Rust toolchains"
+# rustup update
+
 # Fetch all git Repositories below folder (https://git-scm.com)
 # echo "git fetch"
 # find ~/git -name ".git" -type d -print -exec git -C {}/../ fetch --all \;
